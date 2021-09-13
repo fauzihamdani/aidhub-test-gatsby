@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /************ Custom Properties ***********/
+
+  /* Main Color */
+  --primary-color: purple;
+
+  /* Secondary Color */
+  --secondary-color: #433434;
+
+  /* Secondary Color Modified */
+  --secondary-color-m: #ff94088e;
+
+  /* tertiary color */
+  --button-color: linear-gradient(
+    90deg,
+    #4dd4f7 0%,
+    #9090fb 36.46%,
+    #ff6b81 71.35%,
+    #fbdf63 100%
+  );
+
+  /* tertiary color modified */
+  --background-color-m: #e5e5e5;
+  --modal-color: #1f1f1f;
+  --input-color: #5c5c5c;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.bg {
+  background-color: #0b0b0b;
+}
+
+.container__ {
+  width: 40vw;
+  margin: 0 auto;
+}
+
+.container__2 {
+  width: 95vw;
+  margin: 0 auto;
+}
+
+.tes {
+  color: var(--primary-color);
+}
+
+.button-a {
+  cursor: pointer;
+}
+
+.button-a:active {
+  /* background-color: #3e8e41; */
+  /* box-shadow: 0 5px #666; */
+  transform: translateY(4px);
+}
+
+.clicked {
+  cursor: pointer;
+}
+
+.clicked:active {
+  /* background-color: #3e8e41; */
+  /* box-shadow: 0 5px #666; */
+  transform: translateY(4px);
+}
+
+.image-size-100 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.image-size-100-rounded {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.form-size-100 {
+  height: 100%;
+  width: 100%;
+}
+
+.form-design {
+  border-radius: 5px;
+  padding: 1rem;
+  color: black;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  height: 4.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--primary-color);
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+.bg-image-colorfull {
+  width: 7rem;
+  height: 7rem;
+  /* background-color: white; */
+  border-radius: 50%;
+  background: var(--primary-color);
+  position: relative;
+  padding: 0.2rem;
+}
+
+.bg-image-pp-colorfull {
+  /* background-color: white; */
+  border-radius: 50%;
+  background: var(--button-color);
+  position: relative;
+  padding: 0.4rem;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.pages-container-padding {
+  padding: 1.5rem 0 3.5rem 3rem;
+}
+
+.rounded {
+  border-radius: 50px;
+}
+
+.remove-focus {
+}
+
+.remove-focus:focus {
+  outline: none !important;
+  border: none !important;
+}
